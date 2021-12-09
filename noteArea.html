@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>게시판</title>
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/sliderPhoto.css" />
+
+    <!-- 초기화 -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+
+    <!-- 공통 구성 -->
+    <link rel="stylesheet" type="text/css" href="css/section.css" />
+
+    <!-- header / 헤더 -->
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+
+    <!-- 본문과 푸터 구성 -->
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+
+    <!-- 종이 스타일 -->
+    <link rel="stylesheet" type="text/css" href="css/paperForm.css" />
+    <!-- 섹션 -->
+    <link rel="stylesheet" type="text/css" href="css/section.css" />
+    <!-- 라이트박스 -->
+    <link rel="stylesheet" type="text/css" href="css/lightBox.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/noteArea.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="jquery.masonry.min.js"></script>
+    <script src="jquery.imagesloaded.min.js"></script>
+
+    <script src="js/noteArea.js"></script>
+</head>
+
+<body>
+    <div id="main-header">
+        <header class="container">
+            <div>
+                <center>
+                    <img src="img/Logo_1.png" width="30px">
+                    <i>YOUNGYOUNG PAGE</i>
+                    <img src="img/Logo_2.png" width="30px">
+                </center>
+                <label for="checkbox">▼</label>
+                <h1>MENU</h1>
+            </div>
+            <input id="checkbox" checked="checked" type="checkbox">
+            <nav>
+                <ul>
+                    <li><a href="main.html">메인화면</a></li>
+                    <li><a href="myPhoto.html">사진첩</a></li>
+                    <li><a href="codeportFolio.html">코드 포트폴리오</a></li>
+                    <li class="active"><a href="noteArea.html">게시판</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div id="main-content">
+        <article class="container">
+            <h1>게시판</h1>
+            <p>의견을 자유롭게 작성하는 게시판 입니다.</p>
+            <p>작성 후, [내용 입력] 버튼을 눌러주세요!</p>
+        </article>
+    </div>
+
+    <div id="sub-content">
+        <article class="container">
+            <!-- 본문 영역 -->
+            <section id="main-section">
+                <form>
+                    <textarea id="textInput" placeholder="올리고 싶은 내용을 입력하세요."></textarea>
+                    <center>
+                        <input type="button" id="addButton" class="addButton" value="내용 입력">
+                    </center>
+                </form>
+                <ul id="note">
+                </ul>
+        </article>
+        <div id="main-footer">
+            <footer class="container">
+                <div>©2020-06 한국 산업 기술 대학교</div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

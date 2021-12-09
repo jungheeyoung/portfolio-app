@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>포트폴리오</title>
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/sliderPhoto.css" />
+
+    <!-- 초기화 -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+
+    <!-- 공통 구성 -->
+    <link rel="stylesheet" type="text/css" href="css/section.css" />
+
+    <!-- header / 헤더 -->
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+
+    <!-- 본문과 푸터 구성 -->
+    <link rel="stylesheet" type="text/css" href="css/footer_1.css" />
+
+    <!-- 종이 스타일 -->
+    <link rel="stylesheet" type="text/css" href="css/paperForm.css" />
+    <!-- 섹션 -->
+    <link rel="stylesheet" type="text/css" href="css/section.css" />
+    <!-- 라이트박스 -->
+    <link rel="stylesheet" type="text/css" href="css/lightBox.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="jquery.masonry.min.js"></script>
+    <script src="jquery.imagesloaded.min.js"></script>
+    <style>
+        button {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background-color: palevioletred;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        #image {
+            width: 350px;
+        }
+
+        .boxEvent {
+            align-items: center;
+        }
+    </style>
+    <!-- 이미지 전시를 위한 스크립트  -->
+    <script src="js/pulldownMenu.js"></script>
+    <script>
+        window.onload = function () {
+            // 변수를 선언합니다.
+            var count = 0;
+            var animate = 0;
+            var image = document.getElementById('image');
+            var frames = [
+                'img/0.png', 'img/1.png', 'img/2.png', 'img/3.png', 'img/4.png',
+                'img/5.png', 'img/6.png', 'img/7.png'
+            ];
+
+            // 타이머 반복을 시작합니다.
+            setInterval(function () {
+                image.src = frames[count % frames.length];
+                count = count + 1;
+            }, 1000);
+
+            $('#box').css({
+                width: 0,
+                height: 70,
+                background: 'red'
+            }).animate({
+                width: 300,
+                opacity: 0.5,
+            }, 500);
+            animate = 1;
+            // 이벤트를 연결합니다.
+            $(document).ready(function () {
+                // 이벤트를 연결합니다.
+                $('button').click(function () {
+                    // 간단한 효과를 적용합니다.
+                    if (animate == 0) {
+                        $('#box').css({
+                            width: 0,
+                            height: 70,
+                            background: 'red'
+                        }).animate({
+                            width: 300,
+                            opacity: 0.5,
+                        }, 500);
+                        animate = 1;
+                    }
+                    else {
+                        $('#box').css({
+                            width: 300,
+                            height: 70,
+                            opacity: 0.5
+                        }).animate({
+                            width: 0,
+                            background: 'red'
+                        }, 500);
+                        animate = 0;
+                    }
+
+                    $('.page').fadeToggle('slow');
+                });
+            });
+
+        };
+    </script>
+</head>
+
+<body>
+    <div id="main-header">
+        <header class="container">
+            <div>
+                <center>
+                    <img src="img/Logo_1.png" width="30px">
+                    <i>YOUNGYOUNG PAGE</i>
+                    <img src="img/Logo_2.png" width="30px">
+                </center>
+                <label for="checkbox">▼</label>
+                <h1>MENU</h1>
+            </div>
+            <input id="checkbox" checked="checked" type="checkbox">
+            <nav>
+                <ul>
+                    <li><a href="main.html">메인화면</a></li>
+                    <li><a href="myPhoto.html">사진첩</a></li>
+                    <li class="active"><a href="codeportFolio.html">코드 포트폴리오</a></li>
+                    <li><a href="noteArea.html">게시판</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div id="main-content">
+        <article class="container">
+            <h1>코드 포트폴리오</h1>
+            <p> 나의 경력을 표시하는 코드 포트 폴리오 페이지 입니다. </p>
+            <p> [경력 전시 페이지] 버튼을 선택하여 이력을 확인해주세요! </p>
+        </article>
+    </div>
+
+    <div id="sub-content">
+        <article class="container">
+            <!-- 본문 영역 -->
+            <section id="main-section">
+
+                <center>
+                    <div class="boxEvent">
+                        <img src="img/load.PNG" width="50" id="loadImg">
+                        <span id="box"></span>
+                    </div>
+                </center>
+
+                <center>
+                    <button>경력 전시 페이지</button>
+                    <div class="page">
+                        <img id="image" name="j_test">
+                        <h1>코드 인증서 전시 버튼</h1>
+                        <p>2020 Coursera / EDX 인증서</p>
+                </center>
+
+    </div>
+    </section>
+    </article>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+
+        ul#note {
+            border: #000066 solid 1px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+
+            margin-top: 10px;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        ul#note li {
+            border-bottom: #000099 solid 1px;
+            padding: 10px;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#e3e3e3));
+            background-image: -moz-linear-gradient(#f9f9f9, #e3e3e3);
+            background-image: linear-gradient(#f9f9f9, #e3e3e3);
+        }
+
+        ul#note li:last-child {
+            /* 하단보더겹침빼기 */
+            border-bottom: none;
+            /* 하단의 누락된 코너 레디우스 처리*/
+            -webkit-border-bottom-right-radius: 5px;
+            -webkit-border-bottom-left-radius: 5px;
+            -moz-border-radius-bottomright: 5px;
+            -moz-border-radius-bottomleft: 5px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        ul#note li:first-child {
+            -webkit-border-top-right-radius: 5px;
+            -webkit-border-top-left-radius: 5px;
+            -moz-border-radius-topright: 5px;
+            -moz-border-radius-topleft: 5px;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            resize: none;
+        }
+
+        .addButton{
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                background-color: palevioletred;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+        }

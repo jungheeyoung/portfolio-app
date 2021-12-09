@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>정희영의 미니 홈페이지</title>
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/sliderPhoto.css" />
+
+    <!-- 초기화 -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+
+    <!-- 공통 구성 -->
+    <link rel="stylesheet" type="text/css" href="css/section.css" />
+
+    <!-- header / 헤더 -->
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+
+    <!-- 본문과 푸터 구성 -->
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="jquery.masonry.min.js"></script>
+    <script src="jquery.imagesloaded.min.js"></script>
+
+    <!-- 이미지 전시를 위한 스크립트 -->
+    <script src="js/pulldownMenu.js"></script>
+
+</head>
+
+<body>
+    <div id="main-header">
+        <header class="container">
+            <div>
+                <center>
+                    <img src="img/Logo_1.png" width="30px">
+                    <i>YOUNGYOUNG PAGE</i>
+                    <img src="img/Logo_2.png" width="30px">
+                </center>
+                <label for="checkbox">▼</label>
+                <h1>MENU</h1>
+            </div>
+            <input id="checkbox" checked="checked" type="checkbox">
+            <nav>
+                <ul>
+                    <li class="active"><a href="main.html">메인화면</a></li>
+                    <li><a href="myPhoto.html">사진첩</a></li>
+                    <li><a href="codeportFolio.html">코드 포트폴리오</a></li>
+                    <li><a href="noteArea.html">게시판</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div id="main-content">
+        <article class="container">
+            <h1>메인화면</h1>
+            <p>안녕하세요! 정희영의 미니 홈페이지 입니다.</p>
+        </article>
+    </div>
+    <div id="sub-content">
+        <article class="container">
+
+            <!--slider-->
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="img/대학교.jpg" style="width:100%">
+                    <div class="text">성인된 후 어머니와 괌 놀러가기</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="img/고등학교.jpg" style="width:100%">
+                    <div class="text">고등학교 때 어머니와 인생사진 찍기</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="img/유아시절.jpg" style="width:100%">
+                    <div class="text">어렸을 때 사진</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </article>
+    </div>
+    <div id="main-footer">
+        <footer class="container">
+            <div>©2020-06 한국 산업 기술 대학교</div>
+        </footer>
+    </div>
+    <script src="js/sliderPhoto.js"></script>
+</body>
+
+</html>

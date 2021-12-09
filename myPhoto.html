@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>사진첩</title>
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+    <!-- 초기화 -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+
+    <!-- 공통 구성 -->
+    <link rel="stylesheet" type="text/css" href="css/section.css" />
+
+    <!-- header / 헤더 -->
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+
+    <!-- 종이 스타일 -->
+    <link rel="stylesheet" type="text/css" href="css/paperForm.css" />
+    <!-- 섹션 -->
+    <link rel="stylesheet" type="text/css" href="css/section.css" />
+
+    <!-- 라이트박스 -->
+    <link rel="stylesheet" type="text/css" href="css/lightBox.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="jquery.masonry.min.js"></script>
+    <script src="jquery.imagesloaded.min.js"></script>
+
+    <!-- 이미지 전시를 위한 스크립트  -->
+    <script src="js/pulldownMenu.js"></script>
+</head>
+
+<body>
+    <div id="main-header">
+        <header class="container">
+            <div>
+                <center>
+                    <img src="img/Logo_1.png" width="30px">
+                    <i>YOUNGYOUNG PAGE</i>
+                    <img src="img/Logo_2.png" width="30px">
+                </center>
+                <label for="checkbox">▼</label>
+                <h1>MENU</h1>
+            </div>
+            <input id="checkbox" checked="checked" type="checkbox">
+            <nav>
+                <ul>
+                    <li><a href="main.html">메인화면</a></li>
+                    <li class="active"><a href="myPhoto.html">사진첩</a></li>
+                    <li><a href="codeportFolio.html">코드 포트폴리오</a></li>
+                    <li><a href="noteArea.html">게시판</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div id="main-content">
+        <article class="container">
+            <h1>사진첩</h1>
+            <p>정희영의 추억을 정리해 둔 사진첩 페이지입니다.</p>
+            <p>각 시기별(유아, 휴식, 성인)로 상단 아이콘이 나뉘어져 있습니다.</p>
+            
+            <p>해당 사진을 선택해서 상세 정보를 확인하세요!</p>
+        </article>
+    </div>
+
+    <div id="sub-content">
+        <article class="container">
+            <!-- 본문 영역 -->
+            <section id="main-section">
+
+                <div class="paper" id="img/유아시절.jpg">
+                    <div class="paper-holder">
+                        <a><img width="190" src="img/part1.PNG"></a>
+                    </div>
+                    <p class="paper-description">어렸을 때 사진</p>
+                    <div class="paper-content">
+                        <a class="paper-link" href="#"><img src="img/유아시절.jpg"></a>
+                        <p class="paper-text">어렸을 때 꼬맹이 시절 사진 둠둠칫</p>
+                    </div>
+                </div>
+
+                <div class="paper" id="img/대학교.jpg">
+                    <div class="paper-holder">
+                        <a><img width="190" src="img/part3.PNG"></a>
+                    </div>
+                    <p class="paper-description">성인된 후 어머니와 괌 놀러가기</p>
+                    <div class="paper-content">
+                        <a class="paper-link" href="#"><img src="img/대학교.jpg"></a>
+                        <p class="paper-text">괌 3박 4일 희영 패키지로 따악 괌 놀러가기!</p>
+                    </div>
+                </div>
+
+                <div class="paper" id="img/고등학교.jpg">
+                    <div class="paper-holder">
+                        <a><img width="190" src="img/part2.PNG"></a>
+                    </div>
+                    <p class="paper-description">고등학교 때 어머니와 인생사진 찍기</p>
+                    <div class="paper-content">
+                        <a class="paper-link" href="#"><img src="img/고등학교.jpg"></a>
+                        <p class="paper-text">내 생일에 어머니와 인생 4컷 사진 찍기</p>
+                    </div>
+                </div>
+                <div class="paper" id="img/KakaoTalk_20200621_151127476.jpg">
+                    <div class="paper-holder">
+                        <a><img width="190" src="img/part3.PNG"></a>
+                    </div>
+                    <p class="paper-description">미국 출장 갔을 때 사진</p>
+                    <div class="paper-content">
+                        <a class="paper-link" href="#"><img src="img/KakaoTalk_20200621_151127476.jpg"></a>
+                        <p class="paper-text">텍사스 출장가서 찍은 사진!</p>
+                    </div>
+                </div>
+
+                <div class="paper" id="img/KakaoTalk_20200621_151127476_01.jpg">
+                    <div class="paper-holder">
+                        <a><img width="190" src="img/part2.PNG"></a>
+                    </div>
+                    <p class="paper-description">성인된 후 놀러가서 찍은 사진</p>
+                    <div class="paper-content">
+                        <a class="paper-link" href="#"><img src="img/KakaoTalk_20200621_151127476_01.jpg"></a>
+                        <p class="paper-text">코로나 사태 전 놀러간 사진!</p>
+                    </div>
+                </div>
+
+                <div class="paper" id="img/KakaoTalk_20200621_151127476_02.jpg">
+                    <div class="paper-holder">
+                        <a><img width="190" src="img/part3.PNG"></a>
+                    </div>
+                    <p class="paper-description">맛있는 스테이크 집!</p>
+                    <div class="paper-content">
+                        <a class="paper-link" href="#"><img src="img/KakaoTalk_20200621_151127476_02.jpg"></a>
+                        <p class="paper-text">성인된 후 간 여행에서 먹은 스테이크 집</p>
+                    </div>
+                </div>
+                <div class="paper" id="img/KakaoTalk_20200621_151127476_03.jpg">
+                    <div class="paper-holder">
+                        <a><img width="190" src="img/part3.PNG"></a>
+                    </div>
+                    <p class="paper-description">스테이크 집 야경</p>
+                    <div class="paper-content">
+                        <a class="paper-link" href="#"><img src="img/KakaoTalk_20200621_151127476_03.jpg"></a>
+                        <p class="paper-text">맛있는 스테이크 먹고 본 풍경</p>
+                    </div>
+                </div>
+
+                <div class="paper" id="img/KakaoTalk_20200621_151150379.jpg"> 
+                    <div class="paper-holder">
+                        <a><img width="190" src="img/part3.PNG"></a>
+                    </div>
+                    <p class="paper-description">괌 바다 사진</p>
+                    <div class="paper-content">
+                        <a class="paper-link" href="#"><img src="img/KakaoTalk_20200621_151150379.jpg"></a>
+                        <p class="paper-text">성인된 후 어머니와 놀러간 괌에서 찍은 사진</p>
+                    </div>
+                </div>
+
+        </article>
+        <div id="main-footer">
+            <footer class="container">
+                <div>©2020-06 한국 산업 기술 대학교</div>
+            </footer>
+        </div>
+        <!-- 라이트박스 -->
+        <div id="darken-background">
+            <div id="lightbox">
+                <div class="user-information">
+                    <a class="user-information-image" href="#">
+                        <img src="img/user.png" />
+                    </a>
+                    <div class="user-information-text">
+                        <h3>해당 사진과 정희영의 상세 정보 표시</h3>
+                        <p>해당 사진의 상세 정보가 보고 싶다면 하단의 링크로 이동 후 팔로우 해주세요!</p>
+                        <p>https://www.instagram.com/young8873/</p>
+                    </div>
+                </div>
+                <hr class="lightbox-splitter">
+                <img id = "lightBoxImage" src="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
